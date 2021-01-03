@@ -20,9 +20,9 @@ jobs:
         with:
           personal_token: ${{ secrets.AGGREGATED_SOURCE_TOKEN }}
           src_path: /.
-          dst_path: /db/
+          dst_path: /docs/
           dst_owner: IGPGroup17
           dst_repo_name: studentpals-aggregated-source
           src_branch: master
           dst_branch: master
-          commit_message: From database-creation.
+          commit_message: From documentation. 

@@ -25,9 +25,10 @@ paths:
       responses:
         '200':
           description: OK (A JSON schema for the student)
-          schema:
-            $ref: '#/api/students/schemas/StudentInfo'
-            
+          content:
+            application/json:
+              schema:
+                $ref: # '#/api/students/schemas/StudentInfo'
         '400':
           description: The specified student ID is invalid (not a number)
         '404':
